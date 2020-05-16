@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fcfcfc"
+    tools:context=".ui.book.BookDetailActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="125dp"
+                android:layout_height="170dp"
+                android:background="@color/imageBackgroundColor"
+                android:id="@+id/bookImageThumbnail"
+                android:scaleType="centerCrop"/>
+
+            <TextView
+                android:id="@+id/tvBookTitle"
+                style="@style/BookDetailTextView"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                tools:text="Book Title"/>
+
+            <TextView
+                android:id="@+id/tvBookCategory"
+                style="@style/BookDetailTextView"
+                android:background="#edecec"
+                tools:text="Book Category"/>
+
+            <TextView
+                android:id="@+id/tvBookDescription"
+                style="@style/BookDetailTextView"
+                tools:text="Book description"/>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
