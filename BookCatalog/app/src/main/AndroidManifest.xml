@@ -14,7 +14,7 @@
         <activity
             android:name=".ui.book.BookDetailActivity"
             android:label="@string/title_activity_book_detail"/>
-        <activity android:name=".MainActivity">
+        <activity android:name=".BookActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

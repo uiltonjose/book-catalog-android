@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        recyclerView = findViewById(R.id.recycler_view);
+        recyclerView = findViewById(R.id.recyclerView);
         recyclerView.setLayoutManager(new GridLayoutManager(this, 3));
     }
 
@@ -49,6 +49,12 @@ public class MainActivity extends AppCompatActivity {
                     final List<Book> bookList = response.body().bookList;
                     adapter = new BookAdapter(MainActivity.this, bookList);
                     recyclerView.setAdapter(adapter);
+
+                    for (Book book : bookList) {
+                        if (book.title.startsWith("H")) {
+                            // TODO alal
+                        }
+                    }
                 }
             }
 
